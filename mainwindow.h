@@ -32,6 +32,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+    const ULONG_PTR CUSTOM_TYPE = 10000;
 };
 
 #endif // MAINWINDOW_H
