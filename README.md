@@ -1,5 +1,5 @@
 # Windows Message
-##Outline
+## Outline
 Most common condition, we may need some outer program to help us processing or distinguish something in our program. It becomes a problem if the program couldn't be combination together. The communication between two programs is important. We can use message on natvie platform to help us completing the communication problem.
 
 ## Message on Windows
