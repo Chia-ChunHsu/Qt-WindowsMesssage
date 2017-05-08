@@ -1,4 +1,4 @@
-# Windows Message
+ï»¿# Windows Message
 ## Outline
 Most common condition, we may need some outer program to help us processing or distinguish something in our program. It becomes a problem if the program couldn't be combination together. The communication between two programs is important. We can use message on natvie platform to help us completing the communication problem.
 
@@ -69,7 +69,7 @@ this parameter is a pointer to [COPYDATASTRUCT][6] structure which contains the 
 
 
 ## Reference Tutorial
-Qt ¶iµ{³q°T[4]
+Qt é€²ç¨‹é€šè¨Š[4]
 
 [1]: http://doc.qt.io/qt-5/qwidget.html#nativeEvent  "Native Event"
 [2]: https://wiki.winehq.org/List_Of_Windows_Messages "List of WM"
