@@ -27,16 +27,17 @@ This function is a portected member, you should declare and rewrite it in protec
 
 3. Syntax 
 
-LRESULT WINAPI SendMessage( <br>
-  _In_ HWND   hWnd, <br>
-  _In_ UINT   Msg, <br>
-  _In_ WPARAM wParam, <br>
-  _In_ LPARAM lParam <br>
+>>> LRESULT WINAPI SendMessage( <br>
+>>>  _In_ HWND   hWnd, <br>
+>>>  _In_ UINT   Msg, <br>
+>>>  _In_ WPARAM wParam, <br>
+>>>  _In_ LPARAM lParam
 
-);
+>>> );
 
 <br>
-Find the defination on [MSDN Website][5]
+
+Find the defination on [MSDN Website][5].
 
 **hWnd**
 It is a handler to decide which window should receieve message
@@ -62,7 +63,7 @@ this parameter is a pointer to [COPYDATASTRUCT][6] structure which contains the 
 *COPYDATASTRUCT* have three parameters
 
 | Type | Name | Defination |
-|:--:|:--:|:--:|
+|:--:|:--:|:---|
 | ULONG_PTR | dwData | It is a unsinged long type for pointer precision. You can defined it as the unsigned long number you wanted. Presumably dwData is a method you can check the bridge between sender and receiver. |
 | DWORD | cbData |  A 32-bit unsigned integer. The range is 0 through 4294967295 decimal.  Here is to decide the data size. |
 | PVOID | lpData | The pointer of the cbData. | 
