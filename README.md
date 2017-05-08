@@ -69,13 +69,13 @@ this parameter is a pointer to [COPYDATASTRUCT][6] structure which contains the 
 
 
 ## Reference Tutorial
-[Qt 之間的進程通訊][4]
+Qt 進程通訊[4]
 
 [1]: http://doc.qt.io/qt-5/qwidget.html#nativeEvent  "Native Event"
 [2]: https://wiki.winehq.org/List_Of_Windows_Messages "List of WM"
 [3]: https://msdn.microsoft.com/en-us/library/windows/desktop/ms649011(v=vs.85).aspx "MSDN Defination"
 [4]: http://blog.csdn.net/liang19890820/article/details/50589404 "Qt Process"
 
-[5] :https://msdn.microsoft.com/zh-tw/library/windows/desktop/ms644950(v=vs.85).aspx "SendMessage"
+[5]: https://msdn.microsoft.com/zh-tw/library/windows/desktop/ms644950(v=vs.85).aspx "SendMessage"
 
 [6]: https://msdn.microsoft.com/en-us/library/windows/desktop/ms649010(v=vs.85).aspx  "COPYDATASTRUCT"
