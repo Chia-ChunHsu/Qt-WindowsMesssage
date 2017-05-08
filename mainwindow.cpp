@@ -44,11 +44,10 @@ void MainWindow::on_sendButton_clicked()
     QString sendMSG = ui->textEditSignal->toPlainText();
     QByteArray data = sendMSG.toUtf8();
     COPYDATASTRUCT copydata;
-    copydata.dwData = CUSTOM_TYPE;  // 用户定义数据
+    copydata.dwData = CUSTOM_TYPE;  //It can be anything which is defined by user.
     copydata.cbData = data.size();  //Data Size
     copydata.lpData = data.data();  //Data Pointer
 
-    effectiveWinId();
     SendMessage(handle,WM_COPYDATA,(WPARAM)NULL,(LPARAM)&copydata);
 }
 
