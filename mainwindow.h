@@ -3,11 +3,9 @@
 
 #include <QMainWindow>
 #include <Windows.h>
-//#include <QDebug>
-//#include <stdlib.h>
-//#pragma comment(lib, "user32.lib")
-//#include <qt_windows.h>
-//#include <WinUser.h>
+
+//#pragma comment(lib, "user32.lib") //if you don't link libary on .pro file
+
 
 namespace Ui {
 class MainWindow;

@@ -38,14 +38,18 @@ void MainWindow::on_sendButton_clicked()
 {
     const QString str = ui->textEditGoal->toPlainText(); //"MainWindow";
     LPWSTR path = (LPWSTR)str.unicode();
+
     HWND handle =  ::FindWindowW(NULL,path);
-    QString filename = ui->textEditSignal->toPlainText();
-    QByteArray data = filename.toUtf8();
+
+    QString sendMSG = ui->textEditSignal->toPlainText();
+    QByteArray data = sendMSG.toUtf8();
     COPYDATASTRUCT copydata;
     copydata.dwData = CUSTOM_TYPE;  // 用户定义数据
-    copydata.lpData = data.data();  //数据大小
-    copydata.cbData = data.size();  // 指向数据的指针
-    SendMessage(handle,WM_COPYDATA,(WPARAM)0,(LPARAM)&copydata);
+    copydata.cbData = data.size();  //Data Size
+    copydata.lpData = data.data();  //Data Pointer
+
+    effectiveWinId();
+    SendMessage(handle,WM_COPYDATA,(WPARAM)NULL,(LPARAM)&copydata);
 }
 
 void MainWindow::on_changeWButton_clicked()
