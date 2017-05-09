@@ -27,15 +27,13 @@ This function is a portected member, you should declare and rewrite it in protec
 
 3. Syntax 
 
->>> LRESULT WINAPI SendMessage( <br>
->>>  _In_ HWND   hWnd, <br>
->>>  _In_ UINT   Msg, <br>
->>>  _In_ WPARAM wParam, <br>
->>>  _In_ LPARAM lParam
+LRESULT WINAPI SendMessage(
+    _In_ HWND   hWnd, 
+    _In_ UINT   Msg, 
+    _In_ WPARAM wParam,
+    _In_ LPARAM lParam
+);
 
->>> );
-
-<br>
 
 Find the defination on [MSDN Website][5].
 
