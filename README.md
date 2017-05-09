@@ -27,6 +27,8 @@ This function is a portected member, you should declare and rewrite it in protec
 
 3. Syntax 
 
+```c++
+
 LRESULT WINAPI SendMessage(
     _In_ HWND   hWnd, 
     _In_ UINT   Msg, 
@@ -34,6 +36,7 @@ LRESULT WINAPI SendMessage(
     _In_ LPARAM lParam
 );
 
+```
 
 Find the defination on [MSDN Website][5].
 
